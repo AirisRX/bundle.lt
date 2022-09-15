@@ -7,13 +7,16 @@
   pointer-events: none;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 1s linear;
+ @media (prefers-reduced-motion: no-preference) {
+  .Main-logo {
+    animation: App-logo-spin infinite 15s linear;
   }
-} */
-
-.App-header {
+} 
+/* infinite */
+.Main-logo{
+  width: 50%;
+}
+.App-header, .Loading {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -28,11 +31,18 @@
   color: #61dafb;
 }
 
-/* @keyframes App-logo-spin {
+ @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-} */
+} 
+.fade-in {
+  transition: opacity 1s ease;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
